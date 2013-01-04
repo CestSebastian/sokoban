@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sokoban</title>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.EventEmitter.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Canvas.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Grid.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Matrix.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Random.js"></script>
+        <script type="text/javascript" src="maps.js"></script>
+        <script type="text/javascript" src="sokoban.js"></script>
+        <script type="text/javascript" src="main.js" defer="defer"></script>
+    </head>
+    <body>
+        <img id="emptyImage" src="images/empty.png" />
+        <img id="wallImage" src="images/wall.png" />
+        <img id="floorImage" src="images/floor.png" />
+        <img id="targetImage" src="images/target.png" />
+        <img id="cargoImage" src="images/cargo.png" />
+        <img id="cargoOnTargetImage" src="images/cargo_on_target.png" />
+        <img id="keeperImage" src="images/keeper.png" />
+        <img id="keeperOnTargetImage" src="images/keeper_on_target.png" />
+        <div id="controls">
+            <h2>Current stage: <span id="currentStage">1</span></h2>
+            Stages: <select id="stageSelect"></select>
+            <button id="gotoStage">Go to stage</button>
+        </div>
+    </body>
+</html>
