@@ -5,48 +5,33 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Sokoban : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.EventEmitter.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Canvas.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Grid.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Matrix.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Random.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/sokoban/master/maps.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/sokoban/master/sokoban.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/ereses7/sokoban/master/main.js" defer="defer"></script>
 
     <title>Sokoban</title>
   </head>
 
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ereses7/sokoban">View on GitHub</a>
-
-          <h1 id="project_title">Sokoban</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ereses7/sokoban/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ereses7/sokoban/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <img id="emptyImage" src="images/empty.png" />
+    <img id="wallImage" src="images/wall.png" />
+    <img id="floorImage" src="images/floor.png" />
+    <img id="targetImage" src="images/target.png" />
+    <img id="cargoImage" src="images/cargo.png" />
+    <img id="cargoOnTargetImage" src="images/cargo_on_target.png" />
+    <img id="keeperImage" src="images/keeper.png" />
+    <img id="keeperOnTargetImage" src="images/keeper_on_target.png" />
+    <div id="controls">
+      <h2>Current stage: <span id="currentStage">1</span></h2>
+      Stages: <select id="stageSelect"></select>
+      <button id="gotoStage">Go to stage</button>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p><img src="images/empty.png"><img src="images/wall.png"><img src="images/floor.png"><img src="images/target.png"><img src="images/cargo.png"><img src="images/cargo_on_target.png"><img src="images/keeper.png"><img src="images/keeper_on_target.png"></p><div>
-            <h2>Current stage: 1</h2>
-            Stages: Go to stage
-        </div>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Sokoban maintained by <a href="https://github.com/ereses7">ereses7</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
 
   </body>
 </html>
