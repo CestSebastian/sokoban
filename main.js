@@ -1,6 +1,6 @@
 'use strict';
 
-document.body.onload = function() {
+window.onload = function() {
     var keyMap = {
         37 : 'LEFT',
         38 : 'UP',
