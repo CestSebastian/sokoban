@@ -2,6 +2,7 @@
 
 window.onload = function() {
     var keyMap = {
+        32 : 'SPACE',
         37 : 'LEFT',
         38 : 'UP',
         39 : 'RIGHT',
@@ -54,21 +55,34 @@ window.onload = function() {
     var sokoban = new Sokoban(patterns);
     
     document.addEventListener('keydown', function (event) {
+        var handled = false;
+        
         switch (keyMap[event.keyCode]) {
             case 'UP' :
                 sokoban.moveUp();
+                handled = true;
                 break;
             case 'LEFT' :
                 sokoban.moveLeft();
+                handled = true;
                 break;
             case 'RIGHT' :
                 sokoban.moveRight();
+                handled = true;
                 break;
             case 'DOWN' :
                 sokoban.moveDown();
+                handled = true;
                 break;
+            case 'SPACE' :
+                sokoban.playMap(sokoban.mapIndex);
+                handled = true;
             default :
                 break;
+        }
+        
+        if (handled) {
+            event.preventDefault();
         }
     });
     
